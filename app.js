@@ -6,5 +6,14 @@ fetch(url, {
     },
 })
     .then(res => res.json())
-    .then(res => console.log(res))
+    // .then(res => console.log(res))
+    .then(res => {
+        let localization = {
+            local: res.location.name,
+            localtime: res.location.localtime
+        }
+        document.querySelector('.localization').innerHTML = `${localization.localtime} ${localization.local}`;
+    })
+
     .catch(error => console.warn(error));
+
