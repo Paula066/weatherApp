@@ -29,11 +29,50 @@ background-image: url('./img/cloud.jpg');
     flex-wrap: wrap;
     font-size: 3rem;
     &__name {
-        margin-right: 30px;
+        margin-right: 3rem;
+        cursor: pointer;
+        flex-basis: 30%;
+
     }
     &__tempC {
         flex-basis: 100%;
         font-size: 13rem;
+        display: flex;
+        align-items: center;
     }
+    &__deg {
+        margin-left: 1.5rem;
+        font-size: 5rem;
+        &:first-child::before {
+            content: "\00b0";
+            display: inline-block;
+            width: 30px;
+        }
+    }
+
+    &__boxDeg {
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+    }
+
+    &__deg--small {
+        font-size: 3rem;
+        opacity: 30%;
+        border-top: 1px solid #e6e6e6;
+        text-align: right;
+        padding-right: .5rem;
+        position: relative;
+        user-select: none;
+        &::before {
+            content: "\00b0";
+            display: inline-block;
+            width: 30px;
+            position: absolute;
+            left: 20%;
+        }
+    }
+
+  
 }
 

@@ -11,7 +11,6 @@ class App {
 
     changeTemperature = () => {
         const newTemperatureType = this.degreeType === 'C' ? 'F' : 'C';
-        this.degreeType = newTemperatureType;
         this.degree.setTemperatureType(newTemperatureType)
         this.render();
     }

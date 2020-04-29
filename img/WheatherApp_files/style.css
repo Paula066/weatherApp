@@ -59,17 +59,16 @@ body {
   cursor: pointer;
 }
 
-.localization__deg--small {
+.localization__degF {
   font-size: 3rem;
   opacity: 30%;
   border-top: 1px solid #e6e6e6;
   text-align: right;
   padding-right: .5rem;
   position: relative;
-  user-select: none;
 }
 
-.localization__deg--small::before {
+.localization__degF::before {
   content: "\00b0";
   display: inline-block;
   width: 30px;
