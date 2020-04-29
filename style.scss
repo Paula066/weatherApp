@@ -6,10 +6,14 @@
 
 html {
     font-size: 10px;
+    color: white;
 }
 
 body {
-    background-color: gray;
+background-image: url('./img/cloud.jpg');
+    font-family: 'Poppins', sans-serif;
+    background-repeat: no-repeat;
+    background-size: cover;
 
 }
 
@@ -19,5 +23,17 @@ body {
 }
 
 .localization {
+    margin-top: 5rem;
+    display: flex;
     font-size: 2rem;
+    flex-wrap: wrap;
+    font-size: 3rem;
+    &__name {
+        margin-right: 30px;
+    }
+    &__tempC {
+        flex-basis: 100%;
+        font-size: 13rem;
+    }
 }
+
