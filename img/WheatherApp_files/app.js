@@ -11,7 +11,6 @@ class App {
 
     changeTemperature = () => {
         const newTemperatureType = this.degreeType === 'C' ? 'F' : 'C';
-        this.degreeType = newTemperatureType;
         this.degree.setTemperatureType(newTemperatureType)
         this.render();
     }
@@ -26,12 +25,10 @@ class App {
     }
 
     render = () => {
-        console.log(this.weatherData.condition)
         this._app.innerHTML = `
             <div class="localization__name">${this.weatherData.localization}</div>
             <div class="localization__time">${this.getCurrentDate()}</div>
             ${this.degree.render()}
-           
         `
         this._events();
     }
