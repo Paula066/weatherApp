@@ -13,7 +13,7 @@ class Weather {
                     localTime: result.location.localtime,
                     tempC: result.current.temp_c,
                     tempF: result.current.temp_f,
-
+                    condition: result.current.condition.text,
                 }
                 cb(userLocation);
             })

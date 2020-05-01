@@ -26,10 +26,12 @@ class App {
     }
 
     render = () => {
+        console.log(this.weatherData.condition)
         this._app.innerHTML = `
             <div class="localization__name">${this.weatherData.localization}</div>
             <div class="localization__time">${this.getCurrentDate()}</div>
             ${this.degree.render()}
+           
         `
         this._events();
     }

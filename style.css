@@ -56,7 +56,6 @@ body {
 .localization__boxDeg {
   display: flex;
   flex-direction: column;
-  cursor: pointer;
 }
 
 .localization__deg--small {
@@ -67,12 +66,16 @@ body {
   padding-right: .5rem;
   position: relative;
   user-select: none;
+  cursor: pointer;
 }
 
 .localization__deg--small::before {
   content: "\00b0";
   display: inline-block;
   width: 30px;
-  position: absolute;
-  left: 20%;
+}
+
+.localization__condition {
+  font-size: 4rem;
+  margin-left: 4rem;
 }

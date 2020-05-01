@@ -53,7 +53,6 @@ background-image: url('./img/cloud.jpg');
     &__boxDeg {
         display: flex;
         flex-direction: column;
-        cursor: pointer;
     }
 
     &__deg--small {
@@ -64,13 +63,17 @@ background-image: url('./img/cloud.jpg');
         padding-right: .5rem;
         position: relative;
         user-select: none;
+        cursor: pointer;
         &::before {
             content: "\00b0";
             display: inline-block;
             width: 30px;
-            position: absolute;
-            left: 20%;
         }
+    }
+
+    &__condition {
+        font-size: 4rem;
+        margin-left: 4rem;
     }
 
   
