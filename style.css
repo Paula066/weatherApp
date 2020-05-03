@@ -79,3 +79,14 @@ body {
   font-size: 4rem;
   margin-left: 4rem;
 }
+
+.localization__data {
+  font-size: 1.5rem;
+  columns: 2;
+}
+
+.localization__feel::after {
+  content: "\00b0";
+  display: inline-block;
+  width: 30px;
+}
