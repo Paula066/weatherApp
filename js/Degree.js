@@ -24,13 +24,6 @@ class Degree {
                         <div class="localization__deg localization__deg--small js-degree-change">C</div>
                     `}
                 </div>
-                <div class="localization__condition">${this.weatherData.condition}
-                    <div class="localization__data">
-                        <div class="localization__feel">Feels Like:  ${this.weatherData.feelsLike}</div>
-                        <div class="localization__humidity">Humidity: ${this.weatherData.humidity}%</div>
-                        <div class="localization__humidity">Wind: ${this.weatherData.wind} km/h</div>
-                    </div>
-                </div>    
             </div>
         `
     }

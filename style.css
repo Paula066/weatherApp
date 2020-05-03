@@ -35,8 +35,12 @@ body {
   flex-basis: 30%;
 }
 
-.localization__tempC {
+.localization__boxName {
+  display: flex;
   flex-basis: 100%;
+}
+
+.localization__tempC {
   font-size: 13rem;
   display: flex;
   align-items: center;
@@ -89,4 +93,16 @@ body {
   content: "\00b0";
   display: inline-block;
   width: 30px;
+}
+
+.temperature {
+  flex-basis: 100%;
+}
+
+.days__container {
+  display: flex;
+}
+
+.ss {
+  margin: 0 6rem;
 }
