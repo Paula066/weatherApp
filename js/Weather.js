@@ -1,6 +1,6 @@
 class Weather {
     getWeather(path, cb) {
-        fetch(config.api.current + path, {
+        fetch(config.api.forecast + path, {
             mode: "cors",
             headers: {
                 'Content-Type': 'application/json'
@@ -14,6 +14,11 @@ class Weather {
                     tempC: result.current.temp_c,
                     tempF: result.current.temp_f,
                     condition: result.current.condition.text,
+                    feelsLike: result.current.feelslike_c,
+                    humidity: result.current.humidity,
+                    wind: result.current.wind_kph,
+                    visibility: result.current.vis_km,
+                    forecastday: result.forecast.forecastday
                 }
                 cb(userLocation);
             })
