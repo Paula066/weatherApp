@@ -44,7 +44,8 @@ class App {
             </div>    
             <div class="temperature">
             </div>
-            <div class="days__container">${this.days.render()}</div>
+            <div class="days">${this.days.render()}
+            </div>
         `
         this._events();
     }
@@ -63,7 +64,6 @@ class App {
         return new Date()
             .toISOString()
             .replace('T', ' ')
-            .replace(/-/g, ' ')
             .split('.')[0]
     }
 
