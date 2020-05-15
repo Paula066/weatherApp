@@ -16,12 +16,16 @@ class Days {
                         <div class="days__temp days__temp--degree">Max temp: ${day.day.maxtemp_c}</div>
                         <div class="days__temp days__temp--degree">Min temp: ${day.day.mintemp_c}</div>
                         <div class="days__temp ">Max wind: ${day.day.maxwind_kph} km/h</div>
-                    </div>
+                    </div> 
                 </div>
             `).join('')}
             <div>${this.activeDay}<div>
             
         `;
+    }
+
+    addMoreInformation = () => {
+
     }
 
     parseDateToDataName = (data) => {
@@ -48,6 +52,7 @@ class Days {
     changeData = (e) => {
         const id = e.target.getAttribute('data-key');
         this.activeDay = parseInt(id);
+
         this.forceUpdate();
     }
 
