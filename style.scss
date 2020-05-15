@@ -37,6 +37,7 @@ background-image: url('./img/cloud.jpg');
     &__boxName {
         display: flex;
         flex-basis: 100%;
+        justify-content: space-between;
     }
     &__tempC {
         font-size: 13rem;
@@ -56,6 +57,7 @@ background-image: url('./img/cloud.jpg');
     &__boxDeg {
         display: flex;
         flex-direction: column;
+        justify-content: space-between;
     }
 
     &__deg--small {
@@ -77,6 +79,7 @@ background-image: url('./img/cloud.jpg');
     &__condition {
         font-size: 4rem;
         margin-left: 4rem;
+        margin-top: 4rem;
     }
 
     &__data {

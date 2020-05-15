@@ -38,6 +38,7 @@ body {
 .localization__boxName {
   display: flex;
   flex-basis: 100%;
+  justify-content: space-between;
 }
 
 .localization__tempC {
@@ -60,6 +61,7 @@ body {
 .localization__boxDeg {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 
 .localization__deg--small {
@@ -82,6 +84,7 @@ body {
 .localization__condition {
   font-size: 4rem;
   margin-left: 4rem;
+  margin-top: 4rem;
 }
 
 .localization__data {
