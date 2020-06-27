@@ -70,7 +70,6 @@ class App {
     _events() {
         const temperature = this._app.querySelector('.js-degree-change');
         temperature.addEventListener('click', this.changeTemperature);
-
         this.days && this.days.events && this.days.events();
     }
 

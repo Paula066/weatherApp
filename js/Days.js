@@ -20,13 +20,9 @@ class Days {
                 </div>
             `).join('')}
             <div>${this.activeDay}<div>
-            
         `;
     }
 
-    addMoreInformation = () => {
-
-    }
 
     parseDateToDataName = (data) => {
         const numberOfDay = new Date(data).getDay();
